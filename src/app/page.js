@@ -34,6 +34,11 @@ export default function Home() {
     }
   };
 
+  if (!userData) {
+    return <Link href="/login"></Link>;
+  }
+  
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8 bg-gray-100 min-h-screen">
       {[ 

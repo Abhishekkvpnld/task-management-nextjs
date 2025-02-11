@@ -3,10 +3,9 @@
 import UserPost from "@/components/UserPost";
 import { BACKEND_URL } from "@/constants/api";
 import axios from "axios";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { MdOutlineCreateNewFolder } from "react-icons/md";
+
 
 
 

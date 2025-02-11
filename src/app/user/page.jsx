@@ -43,7 +43,7 @@ const page = () => {
                 }
             )
 
-            if(res?.data?.success){
+            if (res?.data?.success) {
                 toast.success(res?.data?.message)
             }
         } catch (error) {
@@ -56,6 +56,8 @@ const page = () => {
     useEffect(() => {
         fetchPosts()
     }, []);
+
+
 
     return (
         <div className="w-[100vw] min-h-[100vh] bg-slate-100 p-4">
