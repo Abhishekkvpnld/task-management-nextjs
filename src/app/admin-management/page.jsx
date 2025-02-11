@@ -54,7 +54,7 @@ const AdminManagement = () => {
 
     if (searchQuery) {
       filteredList = filteredList.filter((user) =>
-        user.username.toLowerCase().includes(searchQuery.toLowerCase())
+        user.userName.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
 

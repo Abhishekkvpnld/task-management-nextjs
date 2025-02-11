@@ -47,7 +47,7 @@ const Navbar = () => {
                     <span>
                         <img className="rounded-full w-12 h-12" src="/admin.avif" alt="img" />
                     </span>
-                    {userData?.role === "Admin" ? "Admin" : "User"}
+                    {userData?.role == "Admin" ? "Admin" : "User"}
                 </Link>
 
                 <div className="flex gap-5 items-center">

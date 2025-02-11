@@ -13,7 +13,7 @@ const UserPost = ({ post, handleDelete }) => {
     }
 
     return (
-        <div key={post.id} className="mb-4 p-4 h-56 flex flex-col items-center justify-between bg-white shadow-sm rounded-lg hover:shadow-lg transition-all">
+        <div key={post.id} className="mb-4 p-4 h-64 flex flex-col items-center justify-between bg-white shadow-sm rounded-lg hover:shadow-lg transition-all">
             <div className="flex items-center justify-between w-full gap-4">
                 <h3 className="text-lg font-bold">{post.title}</h3>
                 <HiOutlineDotsHorizontal size={20} className="text-gray-600 hover:scale-110 transition-all" />

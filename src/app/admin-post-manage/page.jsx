@@ -17,7 +17,7 @@ const page = () => {
     const fetchPosts = async () => {
         const token = localStorage.getItem("token") || "";
         try {
-            const res = await axios.get(`${BACKEND_URL}/user/all-posts`,
+            const res = await axios.get(`${BACKEND_URL}/admin/all-posts`,
                 {
                     withCredentials: true,
                     headers: { Authorization: `Bearer ${token}` },
@@ -43,7 +43,7 @@ const page = () => {
                 }
             )
 
-            if(res?.data?.success){
+            if (res?.data?.success) {
                 toast.success(res?.data?.message)
             }
         } catch (error) {
@@ -59,8 +59,7 @@ const page = () => {
     return (
         <div className="w-[100vw] min-h-[100vh] bg-slate-100 p-4">
             <div className="flex items-center justify-between">
-                <h1 className="text-2xl font-semibold">Manage Your Tasks</h1>
-                <Link href={"/user/create-task"} className="border bg-white rounded-full mr-4 cursor-pointer"><MdOutlineCreateNewFolder size={25} className="m-2 hover:scale-110 transition-all" title="Create" /></Link>
+                <h1 className="text-2xl font-bold text-violet-700">Manage Users Tasks</h1>
             </div>
 
             <div className="overflow-scroll h-[100vh] grid grid-cols-3 gap-3 mt-3 px-3">
